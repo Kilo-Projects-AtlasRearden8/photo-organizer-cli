@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "photo-organizer"
+version = "1.0.0"
+description = "Local-first CLI to organize photos by date and event, detect near-duplicate filenames, and suggest consistent renames."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Asdale Dynamics, LLC" }]
+license = { file = "LICENSE" }
+keywords = ["photos", "organizer", "cli", "local-first", "dedup"]
+
+[project.scripts]
+photo-organizer = "photo_organizer.cli:main"
+
+[tool.setuptools]
+packages = ["photo_organizer"]
